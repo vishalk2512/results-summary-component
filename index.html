@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>results-summary-component</title>
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="./assets/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css" />
+    <!-- script -->
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="result-card">
+        <h1 class="result-card__title">Your Result</h1>
+        <div class="result-card__display">
+          <h2 class="result-card__score" id="totalScore">76</h2>
+          <span class="result-card__max-score">of 100</span>
+        </div>
+        <p class="result-card__message">Great</p>
+        <p class="result-card__text">
+          You scored higher than 65% of the people who have taken these tests.
+        </p>
+      </div>
+      <div class="summary-card">
+        <h2 class="summary-card__title">Summary</h2>
+        <div class="summary-card__test-container">
+          <div class="summary-card__test summary-card__test--red">
+            <img
+              src="./assets/icon-reaction.svg"
+              alt=""
+              class="summary-card__icon"
+            />
+            <p class="summary-card__text summary-card__text--red">Reaction</p>
+            <div class="summary-card__score">
+              <span id="reactionScore">80 </span>
+              <span class="summary-card__max-score">/ 100</span>
+            </div>
+          </div>
+          <div class="summary-card__test summary-card__test--yellow">
+            <img
+              src="./assets/icon-memory.svg"
+              alt=""
+              class="summary-card__icon"
+            />
+            <p class="summary-card__text summary-card__text--yellow">Memory</p>
+            <div class="summary-card__score">
+              <span id="memoryScore">92 </span>
+              <span class="summary-card__max-score">/ 100</span>
+            </div>
+          </div>
+          <div class="summary-card__test summary-card__test--green">
+            <img
+              src="./assets/icon-verbal.svg"
+              alt=""
+              class="summary-card__icon"
+            />
+            <p class="summary-card__text summary-card__text--green">Verbal</p>
+            <div class="summary-card__score">
+              <span id="verbalScore">61 </span>
+              <span class="summary-card__max-score">/ 100</span>
+            </div>
+          </div>
+          <div class="summary-card__test summary-card__test--blue">
+            <img
+              src="./assets/icon-visual.svg"
+              alt=""
+              class="summary-card__icon"
+            />
+            <p class="summary-card__text summary-card__text--blue">Visual</p>
+            <div class="summary-card__score">
+              <span id="visualScore">72 </span>
+              <span class="summary-card__max-score">/ 100</span>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="summary-card__cta">Continue</a>
+      </div>
+    </div>
+  </body>
+</html>
