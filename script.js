@@ -6,11 +6,12 @@ const visualScore = document.querySelector("#visualScore");
 
 const updateScore = (element, score, time) => {
   let count = 0;
-  setInterval(() => {
-    element.textContent = count;
-    if (count < score) {
-      count++;
+  const interval = setInterval(() => {
+    if (count === score) {
+      clearInterval(interval);
     }
+    element.textContent = count;
+    count++;
   }, time);
 };
 
