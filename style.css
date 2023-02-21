@@ -261,7 +261,8 @@ body {
     border-radius: 3rem;
     display: flex;
     justify-content: center;
-    box-shadow: 2px 2px 20px 2px hsla(241, 72%, 46%, 0.1);
+    box-shadow: 2px 5px 10px 5px hsla(241, 72%, 46%, 0.1),
+      0px 5px 10px hsla(241, 72%, 46%, 0.1);
   }
 
   .result-card,
